@@ -4,11 +4,8 @@ pipeline {
     stage('Test') {
       agent {
         docker {
-<<<<<<< HEAD
         image 'golang' args '-u root --privileged'
-=======
-          image 'golang'
->>>>>>> 6d84adaf7929931f92fb6b2097c1bd8e1a4d57fc
+
         }
 
       }
