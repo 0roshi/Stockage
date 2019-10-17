@@ -4,7 +4,7 @@ pipeline {
     stage('Test') {
       agent {
         docker {
-        image 'golang'
+        image 'golang' args '-u root --privileged'
         }
       }
       steps {
